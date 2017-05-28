@@ -2,8 +2,8 @@
   "name": "electron-json-storage-async",
   "version": "1.0.1-0",
   "description": "electron-json-storage with promises",
-  "main": "built/index.js",
-  "typings": "built/index.d.ts",
+  "main": "index.js",
+  "typings": "dist/index.d.ts",
   "private": true,
   "scripts": {
     "test": "electron-mocha ./test.js",
