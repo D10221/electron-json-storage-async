@@ -1,0 +1,35 @@
+{
+  "name": "electron-json-storage-async",
+  "version": "1.0.0",
+  "description": "electron-json-storage with promises",
+  "main": "built/index.js",
+  "typings": "built/index.d.ts",
+  "private": true,
+  "scripts": {
+    "test": "electron-mocha ./test.js",
+    "build": "tsc -p .",
+    "clean": "rimraf ./built"
+  },
+  "dependencies": {
+    "electron-json-storage": "^3.0.5"    
+  },
+  "keywords": [
+    "electron",
+    "json",
+    "storage",
+    "async",
+    "promise"
+  ],
+  "author": "D10221",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/electron": "^1.4.38",
+    "@types/electron-json-storage": "0.0.19",
+    "@types/mkdirp": "^0.3.29",
+    "@types/mocha": "^2.2.41",
+    "@types/rimraf": "0.0.28",
+    "electron-mocha": "^3.4.0",   
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.6.1"    
+  }
+}
