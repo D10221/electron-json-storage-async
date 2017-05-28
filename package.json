@@ -1,6 +1,6 @@
 {
   "name": "electron-json-storage-async",
-  "version": "1.0.0",
+  "version": "1.0.1-0",
   "description": "electron-json-storage with promises",
   "main": "built/index.js",
   "typings": "built/index.d.ts",
@@ -12,7 +12,7 @@
     "release": "rimraf ./dist && tsc -p tsconfig.prod.json"
   },
   "dependencies": {
-    "electron-json-storage": "^3.0.5"    
+    "electron-json-storage": "^3.0.5"
   },
   "keywords": [
     "electron",
@@ -29,8 +29,8 @@
     "@types/mkdirp": "^0.3.29",
     "@types/mocha": "^2.2.41",
     "@types/rimraf": "0.0.28",
-    "electron-mocha": "^3.4.0",   
+    "electron-mocha": "^3.4.0",
     "mkdirp": "^0.5.1",
-    "rimraf": "^2.6.1"    
+    "rimraf": "^2.6.1"
   }
 }
