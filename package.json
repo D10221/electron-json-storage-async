@@ -1,6 +1,6 @@
 {
   "name": "electron-json-storage-async",
-  "version": "1.0.1-0",
+  "version": "1.0.2-0",
   "description": "electron-json-storage with promises",
   "main": "index.js",
   "typings": "dist/index.d.ts",
