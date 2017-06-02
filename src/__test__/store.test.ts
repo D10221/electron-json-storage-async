@@ -5,6 +5,7 @@ const utils = require("electron-json-storage/lib/utils");
 
 interface Me {
     xName?: string;
+    ok?: boolean;
 }
 
 describe("store", () => {
@@ -17,9 +18,10 @@ describe("store", () => {
         const me: Me = {};
         const store = AsyncStore<Me>("me");
         await store.set("xName", "me");
+        await store.set("ok", true);
         const xName = await store.get("xName");
         assert.equal(xName, "me");
         Object.assign(me, await store.value());
-        assert.deepEqual(me, { xName: "me" });
+        assert.deepEqual(me, { xName: "me", ok: true });
     });
 });

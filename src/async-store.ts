@@ -42,7 +42,7 @@ export const AsyncStore = <T extends {}>(storeName: string) => {
 
     return {
         get: _get<T>(storeName, initialize),
-        set: _set<T>(storeName, initialize),
+        set: _set<any>(storeName, initialize),
         value: _value(initialize),
         clear: () => {
             store = {};
