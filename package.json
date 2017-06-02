@@ -9,7 +9,7 @@
     "test": "electron-mocha ./test.js",
     "build": "tsc -p .",
     "clean": "rimraf ./built",
-    "release": "rimraf ./dist && tsc -p tsconfig.prod.json"
+    "dist": "rimraf ./dist && tsc -p tsconfig.prod.json"
   },
   "dependencies": {
     "electron-json-storage": "^3.0.5"

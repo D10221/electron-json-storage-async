@@ -21,10 +21,11 @@ describe("store", () => {
         const me = {};
         const store = async_store_1.AsyncStore("me");
         yield store.set("xName", "me");
+        yield store.set("ok", true);
         const xName = yield store.get("xName");
         assert.equal(xName, "me");
         Object.assign(me, yield store.value());
-        assert.deepEqual(me, { xName: "me" });
+        assert.deepEqual(me, { xName: "me", ok: true });
     }));
 });
 //# sourceMappingURL=store.test.js.map
